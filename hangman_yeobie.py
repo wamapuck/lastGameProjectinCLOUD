@@ -9,11 +9,7 @@ sentenceList = []
 
 result = bs.find('div', class_='lx-c-sticky')
 for tag in result.find_all('li'):
-    # print(tag.text)
     sentenceList.append(tag.text)
-    
-
-# text = "Hello my name is Choi. Nice to you. How are you? I'm fine. Thank you for asking me."
 
 joined_sentenceList = '.'.join(sentenceList)
 
@@ -50,10 +46,10 @@ for word in Noun_words:
 print(lemmatized_words)
 
 from collections import Counter
-c = Counter(lemmatized_words) # input type should be a list of words (or tokens)
+c = Counter(lemmatized_words)
 print(c)
 k = 20
-print(c.most_common(k)) # 빈도수 기준 상위 k개 단어 출력
+print(c.most_common(k))
 
 import wordcloud
 from wordcloud import WordCloud
