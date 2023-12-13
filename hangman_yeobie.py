@@ -7,19 +7,6 @@ import re
 
 nltk.download('all')
 
-
-
-# header ={"user-agent": "Mozilla/5.0"}
-# url = "https://abcnews.go.com/International"
-# r = requests.get(url, headers=header)
-# bs = BeautifulSoup(r.text, "lxml")
-# links = bs.select("div.ContentList__Item > a")
-# for l in links:
-#     print(l.get("href"))
-#     bs = BeautifulSoup(r.text, "lxml")
-#     contents = bs.select_one("span.oyrP qlwa AGxe")
-#     print(contents.text)
-
 url = "https://www.bbc.com/sport/live/football/67700632"
 res = requests.get(url)
 bs = BeautifulSoup(res.content, "html.parser")
@@ -88,4 +75,3 @@ plt.figure()
 plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis("off")
 plt.show()
-wordcloud.to_file("img/first_review.png")
