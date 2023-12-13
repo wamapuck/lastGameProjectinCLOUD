@@ -54,7 +54,6 @@ print(c.most_common(k))
 import wordcloud
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
-from os import path
 
 
 noun_text = ''
