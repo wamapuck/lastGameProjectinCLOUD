@@ -1,11 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import nltk as nltk
-from nltk.corpus import stopwords
-import pickle
-import re
-
-nltk.download('all')
 
 url = "https://www.bbc.com/sport/live/football/67700632"
 res = requests.get(url)
