@@ -51,17 +51,6 @@ print(c)
 k = 20
 print(c.most_common(k))
 
-import wordcloud
-from wordcloud import WordCloud
-import matplotlib.pyplot as plt
-
-
-noun_text = ''
-for word in lemmatized_words:
-    noun_text = noun_text +' '+word
-
-wordcloud = WordCloud(max_font_size=60, relative_scaling=.5, background_color='white').generate(noun_text)
-plt.figure()
-plt.imshow(wordcloud, interpolation='bilinear')
-plt.axis("off")
-plt.show()
+# 대충 직접 컴퓨터가 맞추는형태가 아니라 우리가 행맨게임을 가장 빠르게 우승하도록 도와주는 코드
+# 단어들 중에서 5개의 빈칸이다
+# 어느자리에 어떠한 단어가 들어간다로 실행과 구성
