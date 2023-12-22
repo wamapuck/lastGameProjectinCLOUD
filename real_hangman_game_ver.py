@@ -2,6 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import nltk as nltk
 
+nltk.download('all')
+
+
 url = "https://www.bbc.com/sport/live/football/67700632"
 res = requests.get(url)
 bs = BeautifulSoup(res.content, "html.parser")
